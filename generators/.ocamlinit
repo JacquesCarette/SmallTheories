@@ -1,3 +1,5 @@
 #require "base";;
 #require "stdio";;
+#mod_use "nat.ml";;   (* wraps nat.ml as module Nat *)
 #use "main.ml";;
+enumerate (Nat.of_int_exn 5);; (* checks Nat loaded properly*)
